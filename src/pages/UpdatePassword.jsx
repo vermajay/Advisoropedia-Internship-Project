@@ -32,7 +32,7 @@ const UpdatePassword = () => {
     }
 
   return (
-        <motion.div variants={textVariant()} className='grid place-items-center min-h-[calc(100vh-6rem)]'>
+        <motion.div variants={textVariant()} className='grid place-items-center min-h-[calc(100vh-6rem)] px-4 sm:px-0'>
             {
                 loading ? (<div className="spinner"></div>)
                 :

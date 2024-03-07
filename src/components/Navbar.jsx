@@ -13,7 +13,7 @@ const Navbar = () => {
     const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center border-b h-auto md:h-[9rem]">
+    <div className="flex flex-col md:flex-row justify-center items-center border-b h-auto md:h-[9rem] pb-2">
 
       <motion.div variants={textVariant()} className="flex flex-col p-4">
         <p className="text-2xl md:text-4xl font-semibold mb-2">Welcome <span className="text-[2rem] md:text-[3rem] font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">{user.firstName} {user.lastName}</span></p>

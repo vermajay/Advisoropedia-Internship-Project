@@ -46,7 +46,7 @@ const LogIn = () => {
         </motion.p>
 
         <motion.form variants={fadeIn("left", "spring", 0.3, 0.75)}
-         onSubmit={submitHandler} className='flex flex-col w-full gap-y-4 mt-6 max-w-sm'>
+         onSubmit={submitHandler} className='flex flex-col w-full gap-y-4 px-4 sm:px-0 mt-6 max-w-sm'>
 
           <label className='w-full'>
               <p className='text-[1.2rem] mb-1 leading-[1.375rem]'>Email Address

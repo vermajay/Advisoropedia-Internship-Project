@@ -121,7 +121,7 @@ const SignUp = () => {
           Join the millions enjyoing this website!
         </motion.p>
 
-        <motion.div variants={fadeIn("left", "spring", 0.3, 0.75)}>
+        <motion.div variants={fadeIn("left", "spring", 0.3, 0.75)} className="px-4 pb-14 sm:px-0 sm:pb-0">
           <ProfilePicture setFormData={setFormData}/>
 
           <form
@@ -245,7 +245,7 @@ const SignUp = () => {
               <label htmlFor="terms">I agree to the terms and conditions</label>
             </div>
 
-            <button className="bg-blue-500 rounded-[8px] font-medium text-white px-[12px] py-[8px] mt-2 hover:scale-[0.98] transition-all duration-150" disabled={loading}>
+            <button className="bg-blue-500 rounded-[8px] font-medium text-white px-[12px] py-[8px] sm:mt-2 hover:scale-[0.98] transition-all duration-150" disabled={loading}>
               {loading ? "Creating..." : "Create Account"}
             </button>
           </form>

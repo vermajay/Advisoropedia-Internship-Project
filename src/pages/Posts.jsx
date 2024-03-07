@@ -36,7 +36,7 @@ const Posts = () => {
   return (
     <div>
       <Navbar/>
-      <div className="overflow-auto w-full h-[calc(100vh-9rem)] relative">
+      <div className="overflow-auto w-full h-[calc(100vh-9rem)] relative pb-20 sm:pb-0">
 
       {/* prev and next buttons */}
       <div className="flex gap-2 fixed bottom-2 right-[30%] sm:right-[47%] z-10">
