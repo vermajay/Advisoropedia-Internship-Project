@@ -30,7 +30,7 @@ exports.resetPasswordToken = async(req, res) => {
         console.log("updated user with token and expiration-> ", updateDetails);
 
         //create url for resetting password
-        const url = `http://localhost:3000/update-password/${token}`;   //this is a link to the UI of app (frontend)
+        const url = `https://advisoropedia-jay-project.netlify.app/update-password/${token}`;   //this is a link to the UI of app (frontend)
  
         //send the mail with the reset password link to the user
         await mailSender(email, "Password Reset Link", `Password Reset Link: ${url} \n This link is valid for 5 minutes`);
