@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow: hidden;
+    height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* code for loading component */
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side,#0073ff 94%,#0000) top/5px 5px no-repeat,
+          conic-gradient(#0000 30%,#006aff);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 5px),#000 0);
+    animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+/* styling the scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(243, 244, 246);
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #919191;
 }
